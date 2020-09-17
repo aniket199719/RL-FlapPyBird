@@ -93,7 +93,7 @@ def train_net(model, params):
             log_results(filename, loss_log)
 
 
-def log_results(filename, data_collect, loss_log):
+def log_results(filename, loss_log):
     # Save the results to a file so we can graph it later.
     with open('results/sonar-frames/loss_data-' + filename + '.csv', 'w') as lf:
         wr = csv.writer(lf)
